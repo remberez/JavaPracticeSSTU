@@ -1,9 +1,9 @@
 package first_chapter;
 
 class Name {
-    private final String lastName;
-    private final String firstName;
-    private final String patronymic;
+    private String lastName;
+    private String firstName;
+    private String patronymic;
 
     public Name(String lastName, String firstName, String patronymic) {
         this.lastName = lastName;
@@ -25,7 +25,6 @@ class Name {
             result.append(firstName);
         }
 
-        // Добавляем отчество, если оно не null или пустое
         if (patronymic != null && !patronymic.isEmpty()) {
             if (!result.isEmpty()) {
                 result.append(" ");
