@@ -1,3 +1,5 @@
+package first_chapter;
+
 class Point {
     double x, y;
 
@@ -12,7 +14,7 @@ class Point {
     }
 }
 
-class Main {
+class FirstTask {
     public static void main(String[] args) {
         Point[] points = new Point[3];
         for (int i = 0; i < 3; i++) {
