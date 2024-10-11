@@ -1,4 +1,4 @@
-package first_chapter;
+package first_chapter.FirstPoint;
 
 class Time {
     static private final int SECONDS_IN_DAY = 86400;

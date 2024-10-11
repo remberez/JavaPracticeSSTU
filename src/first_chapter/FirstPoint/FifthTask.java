@@ -1,4 +1,4 @@
-package first_chapter;
+package first_chapter.FirstPoint;
 
 class House {
     private final int floor;
