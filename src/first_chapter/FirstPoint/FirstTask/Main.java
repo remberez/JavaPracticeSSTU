@@ -1,20 +1,6 @@
-package first_chapter.FirstPoint;
+package first_chapter.FirstPoint.FirstTask;
 
-class Point {
-    double x, y;
-
-    Point(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    @Override
-    public String toString() {
-        return x + " " + y;
-    }
-}
-
-public class FirstTask {
+public class Main {
     public static void main(String[] args) {
         Point[] points = new Point[3];
         for (int i = 0; i < 3; i++) {

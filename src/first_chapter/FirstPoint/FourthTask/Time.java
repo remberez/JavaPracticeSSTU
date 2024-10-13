@@ -1,6 +1,6 @@
-package first_chapter.FirstPoint;
+package first_chapter.FirstPoint.FourthTask;
 
-class Time {
+public class Time {
     static private final int SECONDS_IN_DAY = 86400;
 
     private final int seconds;
@@ -38,19 +38,5 @@ class Time {
     @Override
     public String toString() {
         return getTime();
-    }
-}
-
-public class FourthTask {
-    public static void main(String[] args) {
-        Time[] times = {
-                new Time(10),
-                new Time(10000),
-                new Time(100000),
-        };
-
-        for (var time: times) {
-            System.out.println(time);
-        }
     }
 }
