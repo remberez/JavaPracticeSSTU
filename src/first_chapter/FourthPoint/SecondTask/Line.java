@@ -1,26 +1,18 @@
-package first_chapter.SecondPoint;
+package first_chapter.FourthPoint.SecondTask;
 
-class Point {
-    int x, y;
+public class Line {
 
-    Point(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    @Override
-    public String toString() {
-        return x + ";" + y;
-    }
-}
-
-class Line {
     private Point firstPoint;
     private Point secondPoint;
 
     Line(Point firstPoint, Point secondPoint) {
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
+    }
+
+    Line(double x1, double y1, double x2, double y2) {
+        this.firstPoint = new Point(x1, y1);
+        this.secondPoint = new Point(x2, y2);
     }
 
     @Override
@@ -52,22 +44,5 @@ class Line {
     public void setSecondCord(int x, int y) {
         secondPoint.x = x;
         secondPoint.y = y;
-    }
-}
-
-public class FirstTask {
-    public static void main(String[] args) {
-        Line firstLine = new Line(new Point(1, 3), new Point(23, 8));
-        Line secondLine = new Line(new Point(5, 10), new Point(25, 10));
-        Line thirdLine = new Line(firstLine.getFirstPoint(), secondLine.getSecondPoint());
-
-        /// С изменениями
-        firstLine.setFirstCord(334, 767);
-        secondLine.setSecondCord(666, 888);
-        System.out.println(thirdLine);
-
-        /// Без изменений
-        firstLine.setFirstPoint(new Point(333, 777));
-        System.out.println(thirdLine);
     }
 }
